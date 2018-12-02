@@ -19,8 +19,6 @@ class Todo extends Component {
 
         this.setState({
 
-            // todos: todos  //normal way..
-            //if the key and values both has same neame then we can just do this..
             todos
         })
     }

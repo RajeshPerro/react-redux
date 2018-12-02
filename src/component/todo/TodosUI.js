@@ -4,7 +4,6 @@ const TodosUI = ({ todos, deleteTodo}) =>
 {
     console.log(todos);
     console.log('Length :', todos.length);
-    // console.log("Length : "+todos.toString().lenght);
     const todoList = todos.length? (
         todos.map(todo => {
             return(

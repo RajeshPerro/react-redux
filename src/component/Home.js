@@ -2,30 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import Icon from '../icon-18.png'
 import {connect} from 'react-redux'
-import { axios } from 'axios'
 
 class Home extends Component {
-    // state = {
-    //     posts :[],
-
-    // }
-
-//     async componentDidMount() {
-//         var res = await axios.get('https://jsonplaceholder.typicode.com/posts');
-//         // var data = await res.json();
-//         this.props.updatePost(res);
-     
-//   }
-    // componentDidMount(){
-    //     axios.get('https://jsonplaceholder.typicode.com/posts')
-    //     .then( res =>{
-    //         //console.log(res)
-    //         // let posts = res.data.slice(0,10);
-    //         this.setState({
-    //             posts: res.data.slice(0, 10)
-    //         })
-    //     })
-    // }
     render() {
         const {posts} = this.props;
         console.log("my data : ",this.props);
@@ -59,11 +37,5 @@ const mapStateToProps = (state) =>{
        posts: state.posts
    }   
 }
-
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         updatePost : (allpost) =>{dispatch({type:'ADD_POST',posts:allpost}) }
-//     }
-// }
 
 export default connect(mapStateToProps)(Home)
