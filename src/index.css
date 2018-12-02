@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.home .posts img {
+  position: absolute;
+  width: 95px;
+  height: auto;
+  top: 10px;
+  left: -40px;
+  opacity: 0.5;
+}
+.home .posts {
+  overflow: hidden;
+  padding-left: 30px;
+}
+
+.modal-main {
+  width: 50%;
+  min-height: 200px;
+  text-align: center;
+    margin-top : 50px;
+    margin-left : 10%;
+    right : 'auto';
+    bottom : 'auto';
+    margin-right: -50%;
+    transform : 'translate(-50%, -50%)';
+  
+}
